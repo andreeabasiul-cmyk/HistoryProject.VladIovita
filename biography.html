@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Biography</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+	/* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+			box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+			line-height: 1.6;
+			background: #f9f9f9;
+			color: #333;
+		}
+	
+	/* Meniu principal */
+		.meniu-principal {
+		    list-style: none;
+			display: flex;
+			justify-content: center;
+			background: linear-gradient(90deg, #222, #444);
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+		}
+		
+		.meniu-principal > li {
+		    position: relative;
+		}
+		
+		.meniu-principal > li > a {
+		    display: block;
+			color: white;
+			padding: 15px 20px;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+		
+		.meniu-principal > li > a:hover,
+		.meniu-principal > li > a:hover {
+            background: #228B22;
+			border-bottom: 3px solid #fff;
+        }
+		
+		/* Header */
+        .header {
+            height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: url('header-bg.jpg') center/cover no-repeat;
+			color: white;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+  
+        .header h1 {
+            font-size: 3em;
+			font-family: 'Georgia', serif;
+        }
+
+        /* Intro */
+		.intro {
+            max-width: 1200px;
+			margin: 40px auto;
+			padding: 0 20px;
+			text-align: justify;
+			font-size: 1.1em;
+			line-height: 1.8;
+        }
+		
+		.intro h2 {
+            margin-bottom: 20px;
+			font-size: 1.6em;
+			color: #228B22;
+		}
+  
+        .intro p {
+		    margin-bottom: 20px;
+        }
+
+        /* Imagine principală */
+		.main-image {
+            display: block;
+			margin: 30px auto;
+			max-width: 75%;
+			border-radius: 12px;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+		
+		/* Footer */
+		    footer {
+			text-align: center;
+			padding: 20px;
+			background: #222;
+			color: white;
+			margin-top: 40px;
+		}
+		
+		footer a {
+		    color: #228B22;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+		
+		footer a:hover {
+            text-decoration: underline;
+			
+		}
+
+        /* Responsivitate */
+		@media (max-width: 768px) {
+        .meniu-principal {
+            flex-direction: column;
+        }
+		
+        .main-image {
+			max-width: 100%;
+        }
+		
+		.intro {
+            font-size: 1em;
+			padding: 0 10px;
+		}
+		
+		.header h1 {
+            font-size: 2em;
+        }}
+	</style>
+	
+</head>
+<body>
+
+    <ul  class="meniu-principal">
+	    <li><a href="index.html" class="active">Home</a></li>
+		<li><a href="biography.html">Biography</a></li>
+		<li><a href="achievements.html">Achievements</a></li>
+		<li><a href="contribution.html">Contribution</a></li>
+	</ul>
+	
+	<div class="header">
+	<h1>Biografia lui Vlad Ioviță</h1>
+	</div>
+
+	<div class="photo-section">
+	<img src="img/La_casa_scriitorului_si_cineastului_Vlad_Ioviță_(cropped).jpg" alt="Locuința Vlad Iovita" class="main-image">
+	<div class="intro">
+	<p>Vlad Ioviță s-a născut la 25 decembrie 1935 în satul Cocieri, raionul Dubăsari. A crescut într-un mediu rural, 
+	unde tradițiile și viața simplă a satului au avut o influență importantă asupra formării sale ulterioare ca artist.</p>
+	<p>După absolvirea școlii, a urmat studii în domeniul artelor cinematografice. A studiat la Școala de balet „A. Vaganova” 
+	din Leningrad, iar mai târziu a continuat formarea la cursuri de scenaristică și regie la Moscova.</p>
+	<p>După finalizarea studiilor, s-a întors în Republica Moldova, unde a lucrat la studioul „Moldova-Film”, devenind una 
+	dintre personalitățile importante ale cinematografiei naționale.</p>
+	<p>A decedat la 23 iunie 1983, lăsând în urmă o moștenire culturală valoroasă.</p>
+	</div></div>
+	
+	<footer>
+    <p>&copy; 2026 History Project</p>
+    </footer>
+	
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Achievements</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+	/* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+			box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+			line-height: 1.6;
+			background: #f9f9f9;
+			color: #333;
+		}
+	
+	/* Meniu principal */
+		.meniu-principal {
+		    list-style: none;
+			display: flex;
+			justify-content: center;
+			background: linear-gradient(90deg, #222, #444);
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+		}
+		
+		.meniu-principal > li {
+		    position: relative;
+		}
+		
+		.meniu-principal > li > a {
+		    display: block;
+			color: white;
+			padding: 15px 20px;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+		
+		.meniu-principal > li > a:hover,
+		.meniu-principal > li > a:hover {
+            background: #228B22;
+			border-bottom: 3px solid #fff;
+        }
+		
+		/* Header */
+        .header {
+            height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: url('header-bg.jpg') center/cover no-repeat;
+			color: white;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+  
+        .header h1 {
+            font-size: 3em;
+			font-family: 'Georgia', serif;
+        }
+
+        /* Intro */
+		.intro {
+            max-width: 1200px;
+			margin: 40px auto;
+			padding: 0 20px;
+			text-align: justify;
+			font-size: 1.1em;
+			line-height: 1.8;
+        }
+		
+		.intro h2 {
+            margin-bottom: 20px;
+			font-size: 1.6em;
+			color: #228B22;
+		}
+  
+        .intro p {
+		    margin-bottom: 20px;
+        }
+
+        /* Imagine principală */
+		.main-image {
+            display: flex;
+			align-items: flex-start;
+			gap: 20px;
+			margin: 30px auto;
+			max-width: 75%;
+        }
+		
+		.main-image {
+		    max-width: 40%;
+			border-radius: 12px;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+		}
+		
+		.text {
+		    flex: 1;
+		}
+		
+		.image-grid {
+		    display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 20px;
+			margin: 30px auto;
+			max-width: 80%;
+		}
+		
+		.image-grid img {
+		    width: 100%;
+			height: 750px;
+			object-fit: cover;
+			border-radius: 8px;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+		}
+		
+		/* Footer */
+		    footer {
+			text-align: center;
+			padding: 20px;
+			background: #222;
+			color: white;
+			margin-top: 40px;
+		}
+		
+		footer a {
+		    color: #228B22;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+		
+		footer a:hover {
+            text-decoration: underline;
+			
+		}
+		
+        /* Responsivitate */
+		@media (max-width: 768px) {
+        .meniu-principal {
+            flex-direction: column;
+        }
+		
+        .main-image {
+			max-width: 100%;
+        }
+		
+		.intro {
+            font-size: 1em;
+			padding: 0 10px;
+		}
+		
+		.header h1 {
+            font-size: 2em;
+        }}
+	</style>
+	
+</head>
+<body>
+
+    <ul  class="meniu-principal">
+	    <li><a href="index.html" class="active">Home</a></li>
+		<li><a href="biography.html">Biography</a></li>
+		<li><a href="achievements.html">Achievements</a></li>
+		<li><a href="contribution.html">Contribution</a></li>
+	</ul>
+	
+	<div class="header">
+	<h1>Realizările artistice</h1>
+	</div>
+	
+	<hr width=78%
+		    size=15
+			color=green>
+			
+	<div class="intro">
+	<p>Activitatea lui Vlad Ioviță s-a desfășurat în principal în domeniul cinematografiei, 
+	unde a avut o contribuție semnificativă.</p></div>
+	
+	
+	<div class="intro">
+	    <h2>Filme realizate</h2>
+		
+		<p><b><i>Dimitrie Cantemir</i></b> - Film istoric realizat în cadrul studioului „Moldova-Film”, 
+		care prezintă viața și activitatea domnitorului Dimitrie Cantemir. Scopul filmului este de a 
+		evidenția momente importante din istoria Moldovei și personalitățile sale marcante.</p>
+		<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/YkyOMZVqmEI?si=1lwIsA9QoTu7Y9Q-" frameborder="0" allowfullscreen></iframe></div>
+		
+		<p><b><i>Nuntă la palat</i></b> - Film artistic cu tematică socială și istorică, care reflectă 
+		evenimente și relații din societate într-un context simbolic. Este realizat pentru a evidenția 
+		conflictele și valorile umane din epocă.</p>
+		<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/i7yoqe4_YC8?si=PRq7u3WVCXoVzyO-" frameborder="0" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/teaulbuHXzA?si=CeUx49UVUic4D1Tk" frameborder="0" allowfullscreen></iframe></div>
+		
+		<p><b><i>Calul, pușca și nevasta</i></b> - Film inspirat din viața satului, cu elemente de umor 
+		și satiră socială. Scopul său este de a prezenta într-un mod artistic realitățile și mentalitățile 
+		oamenilor simpli.</p>
+		<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/ahtuyx-aWks?si=tntc57IyC-vuaw0j" frameborder="0" allowfullscreen></iframe></div>
+		
+		<p><b><i>La porțile satanei</i></b> - Film cu tentă dramatică, care abordează teme legate de alegeri 
+		morale și consecințele acțiunilor umane. Contextul său este unul simbolic și reflexiv.</p>
+		<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/qjU1MOk-Kzg?si=D5eOY7drBCcVo5hx" frameborder="0" allowfullscreen></iframe></div>
+		
+		<p><b><i>Fântâna</i></b> - Film documentar/artistic care surprinde viața rurală și importanța 
+		tradițiilor. Evidențiază legătura omului cu natura și spațiul rural moldovenesc.</p>
+		<div class="video-container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/DXXRSGqLhAY?si=SqBTMXKVPGxQo0Wv" frameborder="0" allowfullscreen></iframe></div>
+		
+		<p><b><i>Malanca</i></b> - Film inspirat din tradițiile populare de iarnă din Moldova. Scopul este 
+		de a păstra și promova obiceiurile și cultura autentică a satului.</p>
+		
+		<a href="https://www.youtube.com/@agentianationalaaarhivelor460/search" target="_blank">Agenția Națională a Arhivelor - YouTube</a>
+		
+		
+		<h2>Lucrări literare</h2>
+		
+		<div><p><b><i>Dincolo de ploaie</i></b> - Volum de proză care explorează teme existențiale și emoționale, 
+		reflectând viața interioară a personajelor și experiențele umane.</p></div>
+		
+		<p><b><i>Trei proze</i></b> - Culegere de texte scurte care abordează situații de viață diferite, 
+		cu accent pe observația socială și psihologică.</p>
+		
+		<p><b><i>Un hectar de umbră pentru Sahara</i></b> - Lucrare cu titlu metaforic, care sugerează contrastele 
+		dintre realitate și imaginar, explorând teme filozofice și simbolice.</p>
+		
+		<div class="image-grid">
+            <img src="img/172100705-0.png" alt="Dincolo de ploaie">
+			<img src="img/1012320732.jpg" alt="Trei proze">
+		</div>
+		
+		<a href="https://cartier.md/wp-content/uploads/2024/12/V_Iovita-Dincolo_de_ploaie_1-21.pdf" target="_blank">Un hectar de umbră pentru Sahara - pdf</a>
+
+		<h2>Distincții</h2>
+		
+		<p><b>Premiul de Stat</b> - distincție acordată pentru contribuția semnificativă în domeniul culturii 
+		și artei cinematografice.</p>
+		
+		<p><b>Titlul de „Artist Emerit”</b> - titlu onorific oferit pentru merite deosebite în dezvoltarea artei și 
+		cinematografiei din Republica Moldova.</p>
+		
+		<div class="image-grid">
+            <img src="img/Государственная_премия_МССР.png" alt="Premiul de Stat">
+			<img src="img/Prof.Univ.Emerit.jpg" alt="Titlu de ”Artist Emerit”">
+		</div>
+	</div>
+	
+	<footer>
+    <p>&copy; 2026 History Project</p>
+    </footer>
+  
+</body>
+</html>

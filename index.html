@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+	/* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+			box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+			line-height: 1.6;
+			background: #f9f9f9;
+			color: #333;
+		}
+	
+	/* Meniu principal */
+		.meniu-principal {
+		    list-style: none;
+			display: flex;
+			justify-content: center;
+			background: linear-gradient(90deg, #222, #444);
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+		}
+		
+		.meniu-principal > li {
+		    position: relative;
+		}
+		
+		.meniu-principal > li > a {
+		    display: block;
+			color: white;
+			padding: 15px 20px;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+		
+		.meniu-principal > li > a:hover,
+		.meniu-principal > li > a:hover {
+            background: #228B22;
+			border-bottom: 3px solid #fff;
+        }
+		
+		/* Header */
+        .header {
+            height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: url('header-bg.jpg') center/cover no-repeat;
+			color: white;
+			text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+  
+        .header h1 {
+            font-size: 3em;
+			font-family: 'Georgia', serif;
+        }
+
+        /* Intro */
+		.intro {
+            max-width: 1200px;
+			margin: 40px auto;
+			padding: 0 20px;
+			text-align: justify;
+			font-size: 1.1em;
+			line-height: 1.8;
+        }
+		
+		.intro h2 {
+            margin-bottom: 20px;
+			font-size: 1.6em;
+			color: #228B22;
+		}
+  
+        .intro p {
+		    margin-bottom: 20px;
+        }
+
+        /* Imagine principală */
+		.main-image {
+            display: block;
+			margin: 30px auto;
+			max-width: 75%;
+			border-radius: 12px;
+			box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+		
+		/* Footer */
+		    footer {
+			text-align: center;
+			padding: 20px;
+			background: #222;
+			color: white;
+			margin-top: 40px;
+		}
+		
+		footer a {
+		    color: #228B22;
+			text-decoration: none;
+			margin: 0 10px;
+		}
+		
+		footer a:hover {
+            text-decoration: underline;
+			
+		}
+
+        /* Responsivitate */
+		@media (max-width: 768px) {
+        .meniu-principal {
+            flex-direction: column;
+        }
+		
+        .main-image {
+			max-width: 100%;
+        }
+		
+		.intro {
+            font-size: 1em;
+			padding: 0 10px;
+		}
+		
+		.header h1 {
+            font-size: 2em;
+        }}
+	</style>
+	
+</head>
+<body>
+
+    <ul  class="meniu-principal">
+	    <li><a href="index.html" class="active">Home</a></li>
+		<li><a href="biography.html">Biography</a></li>
+		<li><a href="achievements.html">Achievements</a></li>
+		<li><a href="contribution.html">Contribution</a></li>
+	</ul>
+	
+	<header class="header">
+	<h1>Personalitate marcantă originară din satul Cocieri</h1>
+	</header>
+	
+	<div class="photo-section">
+	<img src="img/ad6b1a7d6ef59c783b6e3ac801e5a907.jpg" alt="Vlad Iovita" class="main-image">
+	<div class="intro">
+	<p>Republica Moldova a oferit culturii numeroase personalități remarcabile, care au contribuit la dezvoltarea literaturii, 
+	cinematografiei și artei naționale. Printre acestea se numără și Vlad Ioviță, una dintre cele mai importante figuri 
+	culturale originare din satul Cocieri, raionul Dubăsari. Prin talentul, munca și devotamentul său, el a reușit să lase 
+	o amprentă semnificativă asupra culturii moldovenești.</p>
+	<p>Acest site este realizat cu scopul de a prezenta viața, activitatea și contribuția lui Vlad Ioviță la dezvoltarea 
+	cinematografiei și literaturii naționale. Proiectul reprezintă o cercetare dedicată unei personalități care a demonstrat 
+	că originile simple nu împiedică atingerea unor realizări importante în domeniul artei și culturii.</p>
+	</div></div>
+	
+	<footer>
+    <p>&copy; 2026 History Project</p>
+    </footer>
+	
+</body>
+</html>
